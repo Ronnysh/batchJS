@@ -1,7 +1,8 @@
 # Kaltura Hackathon - batchJS project
 
 ## Local Env Setup
-Install Couchbase http://www.couchbase.com/nosql-databases/downloads#
+Install Couchbase http://www.couchbase.com/nosql-databases/downloads
+
 Install NodeJS https://nodejs.org/en/
 Clone from github
 Import Data
