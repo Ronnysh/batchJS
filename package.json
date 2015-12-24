@@ -1,0 +1,23 @@
+{
+  "name": "batchjs",
+  "version": "1.0.0",
+  "description": "## Local Env Setup Install Couchbase http://www.couchbase.com/nosql-databases/downloads   Install NodeJS https://nodejs.org/en/   Clone from github Import Data",
+  "main": "index.js",
+  "dependencies": {
+    "couchbase": "^2.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ronnysh/batchJS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ronnysh/batchJS/issues"
+  },
+  "homepage": "https://github.com/Ronnysh/batchJS#readme"
+}
