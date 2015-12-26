@@ -13,8 +13,12 @@ module.exports = function ()
             var isRequestValid = true; // perform here validations on the request query
 
             if (isRequestValid) {
-                result = admin.flush();
-                res.json(result);
+                result = admin.flush(function(error,result){
+                    if (error) {
+                        res.status(500).json(error)
+                    }
+                    res.json(result);
+                });
             } else {
                 res.json({error: 'missing_query'});
             }
@@ -27,8 +31,12 @@ module.exports = function ()
             var isRequestValid = true; // perform here validations on the request query
 
             if (isRequestValid) {
-                result = admin.demodata();
-                res.json(result);
+                admin.demodata(function(error,result){
+                    if (error) {
+                        res.status(500).json(error)
+                    }
+                    res.json(result);
+                });
             } else {
                 res.json({error: 'missing_query'});
             }
@@ -40,8 +48,12 @@ module.exports = function ()
             var isRequestValid = true; // perform here validations on the request query
 
             if (isRequestValid) {
-                result = admin.reload();
-                res.json(result);
+                result = admin.reload(function(error,result){
+                    if (error) {
+                        res.status(500).json(error)
+                    }
+                    res.json(result);
+                });
             } else {
                 res.json({error: 'missing_query'});
             }
