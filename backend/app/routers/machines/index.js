@@ -1,8 +1,9 @@
-﻿var appConfig = require('../../appConfig');
+/*jslint node: true */
+var appConfig = require('../../appConfig');
 var repository = require('../../models/machines/machinesModel');
 
-module.exports = function()
-{
+module.exports = function ()
+    {
     function initialize(router) {
 
         router.route('/machines/list').get(function (req, res) {
