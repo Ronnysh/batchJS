@@ -13,7 +13,8 @@
     "grunt-nodemon": "^0.4.0"
   },
   "dependencies": {
+    "couchbase": "^2.1.2",
     "express": "~4.0.0",
-    "couchbase": "^2.1.2"
+    "morgan": "^1.6.1"
   }
 }
