@@ -1,10 +1,16 @@
+/*jslint node: true */
+var appConfig = require('../../appConfig');
+
 module.exports = function () {
 
     var model = {
         machines: [
             {
-                machineId: '123'
-            }
+                machineId: '12344'
+            },
+            appConfig.couchbaseURL
+            
+                
         ]
     };
 

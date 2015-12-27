@@ -1,4 +1,4 @@
-﻿var appConfig = require('../../appConfig');
+var appConfig = require('../../appConfig');
 var model = require('../../models/machines/machinesModel');
 
 var self = { initialize: initialize };
