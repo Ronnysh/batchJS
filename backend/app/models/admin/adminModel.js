@@ -42,7 +42,8 @@ module.exports = function () {
             
             insertCount = 0;
             for(var i = 0; i < obj.length; i++) {
-                data.insert(obj[i].key,JSON.stringify(obj[i].value),function(error,result){
+//                data.insert(obj[i].key,JSON.stringify(obj[i].value),function(error,result){
+                data.insert(obj[i].key,obj[i].value,function(error,result){
                     insertCount +=1;
                     if (error) {
                         return callback(error, null);
