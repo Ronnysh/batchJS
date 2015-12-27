@@ -9,6 +9,7 @@ var appConfig = require('./app/appConfig');
 
 app.use(bodyParser.urlencoded({ extended: true}));
 app.use(bodyParser.json());
+//app.use(morgan('combined'));
 app.use(morgan('dev'));
 
 var port = process.env.PORT || 9911;
