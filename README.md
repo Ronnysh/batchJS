@@ -6,6 +6,15 @@ Install NodeJS https://nodejs.org/en/
 Clone from github
 Import Data
 
+
+```
+git clone git@github.com:Ronnysh/batchJS.git
+cd batchJS/backend
+npm install
+npm install -g grunt-cli
+grunt
+```
+
 ## Joke of the Day
 What do we do all day long?
 ![moto](http://media02.hongkiat.com/programming-jokes/joke-99-bugs.jpg)
