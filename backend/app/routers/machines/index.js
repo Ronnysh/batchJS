@@ -1,25 +1,25 @@
 ﻿var appConfig = require('../../appConfig');
-var repository = require('../../models/machines/machinesModel');
+var model = require('../../models/machines/machinesModel');
 
-module.exports = function()
-{
-    function initialize(router) {
+var self = { initialize: initialize };
 
-        router.route('/machines/list').get(function (req, res) {
+var innerCache = {};
 
-            var result = null;
-            var isRequestValid = true; // perform here validations on the request query
+function initialize(router) {
 
-            if (isRequestValid) {
-                result = repository.get();
+    router.route('/machines/list').get(function (req, res) {
 
-                res.json(result);
-            } else {
-                res.json({error: 'missing_query'});
-            }
-        });
-    }
+        var result = null;
+        var isRequestValid = true; // perform here validations on the request query
 
-    return { initialize: initialize };
+        if (isRequestValid) {
+            result = model.get();
 
-}();
+            res.json(result);
+        } else {
+            res.json({error: 'missing_query'});
+        }
+    });
+}
+
+module.exports = self;

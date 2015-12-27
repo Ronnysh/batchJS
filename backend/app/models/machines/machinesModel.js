@@ -3,7 +3,7 @@ module.exports = function () {
     var model = {
         machines: [
             {
-                machineId: '12344'
+                machineId: '123'
             }
         ]
     };
